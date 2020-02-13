@@ -11,9 +11,13 @@ function shoot() {
 
     $.ajax({
         url: "http://gherardiandrea.altervista.org/gherardiandrea_0001.php",
-    success: function(data) {
+        data:{
+            test : "aa",
+        },
+        type: "POST",
+    }).done(function(data) {
         alert(data);
-    }});
+    });
 }
 
 const Tab2: React.FC = () => {
